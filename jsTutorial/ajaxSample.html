@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+
+    </ul>
+</body>
+<script>
+    //https://northwind.vercel.app/api/products den aldığın product ların name ini ul içerisindeki li ye yazdır.
+
+    var products = []
+    $.getJSON("https://northwind.vercel.app/api/products", function(result){
+
+
+       
+
+        // result.forEach(element => {
+            
+        //     $("ul").append("<li>" + element.name + "</li>")
+
+        // });
+
+        // products = result;
+
+        // result.map((item, key) => {
+
+        //     $("ul").append("<li>" + item.name + "</li>")
+
+        // })
+
+
+        //Array Sorular
+        // 1) servisten çektiğin ilk 10 elemanı bir diziye ata
+        // var filteredProducts = result.slice(0,10)
+        // console.log('Filtered products...', filteredProducts);
+
+        //2) Fiyatı 20 den büyük elemanları bir dizi halinde bana ver.
+       // var filteredProducts = result.filter(item => item.unitPrice > 20)
+
+        //3) Fiyatı 20 den büyük 50 den küçük eşit olan elemanları dizi halinde bana ver
+            // var filteredProducts = result.filter(item => item.unitPrice > 20 && item.unitPrice <= 50);
+
+            // console.log("filteredProducts", filteredProducts);
+
+            //4) Listenin son elemanını bana ver
+            var lastProduct = result[result.length - 1]
+            console.log('LAST PRODUCT', lastProduct);
+
+
+    })
+
+
+
+
+</script>
+</html>
