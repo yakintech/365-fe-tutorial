@@ -1,0 +1,16 @@
+1) https://northwind.vercel.app/api/suppliers dan supplierları AXIOS ile çek ve ul içerisindeki bir li ye yazdır.
+
+2) https://northwind.vercel.app/api/suppliers dan supplierları fetch ile çek ve ul içerisindeki bir li ye yazdır.
+
+3) Ekrana 3 tane input ve bir buton koy ( companyName, contactName, contactTitle) Butona tıkladığında servise bir supplier eklesin (AXIOS ile)
+
+4) Ekrana 3 tane input ve bir buton koy ( companyName, contactName, contactTitle) Butona tıkladığında servise bir supplier eklesin (FETCH ile)
+
+5) Ekrana bir input (id input) bir buton koy. Butona tıkladığında servisteki supplier silinsin (AXIOS ile)
+
+6) Ekrana bir input (id input) bir buton koy. Butona tıkladığında servisteki supplier silinsin (FETCH ile)
+
+7) https://northwind.vercel.app/api/suppliers 
+* companyName T harfi ile başlayan kaç supplier var?
+* id si 10 olan supplier ın city kolonunu console a yazdır.
+* Posta kodu 5 ile 6 bin arasında olan kaç adet Supplier var...
